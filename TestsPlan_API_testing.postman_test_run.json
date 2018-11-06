@@ -1,0 +1,118 @@
+{
+	"id": "8243d88e-3c46-4f83-a6e1-8423585a3999",
+	"name": "TestsPlan_API_testing",
+	"allTests": [],
+	"timestamp": "2018-11-05T16:22:04.361Z",
+	"collection_id": "87ca39f5-d9a2-4cf6-af24-090f306c154a",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "87ca39f5-d9a2-4cf6-af24-090f306c154a",
+		"name": "TestsPlan_API_testing",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"d8e37ee9-66ae-42dd-a58f-2d8f358961c8"
+		],
+		"folders_order": [],
+		"owner": "5793001",
+		"permissions": {},
+		"favorite": false,
+		"shared": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "postman-echo.com/get",
+			"id": "d8e37ee9-66ae-42dd-a58f-2d8f358961c8",
+			"url": "postman-echo.com/get",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"name": "Status code not 404",
+				"status": "fail",
+				"Status code is not 201": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code not 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is not 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"169"
+			],
+			"allTests": [
+				{
+					"Status code not 404": false,
+					"Status code is not 201": true,
+					"Status code is 200": true
+				}
+			],
+			"time": "169",
+			"totalRequestTime": "169",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 2,
+	"totalFail": 1,
+	"totalTime": 169,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "postman-echo.com/get",
+			"id": "d8e37ee9-66ae-42dd-a58f-2d8f358961c8",
+			"url": "postman-echo.com/get",
+			"time": "2018-11-05T16:22:04.361Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code not 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is not 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

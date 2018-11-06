@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "87ca39f5-d9a2-4cf6-af24-090f306c154a",
+		"name": "TestsPlan_API_testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postman-echo.com/get",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d0f76a52-943d-45d5-b1a2-c65ccb935627",
+						"exec": [
+							"tests[\"Status code is not 201\"]=responseCode.code != 201;",
+							"",
+							"tests[\"Status code is 200\"]=responseCode.code == 200;",
+							"",
+							"",
+							"pm.test(\"Status code not 404\", function(){",
+							"    pm.response.to.not.have.status(404);",
+							"});",
+							"",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.include.header(\"Content-Type →application/json;\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.headers.host).to.equal(\"postman-echo.com\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "postman-echo.com/get",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

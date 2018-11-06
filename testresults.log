@@ -1,0 +1,31 @@
+newman
+
+TestsPlan_API_testing
+
+→ postman-echo.com/get
+  GET postman-echo.com/get [200 OK, 546B, 375ms]
+  ✓  Status code not 404
+  ✓  Content-Type is present
+  ✓  Body matches string
+  ✓  Status code is not 201
+  ✓  Status code is 200
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        0 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        5 │        0 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 517ms                     │
+├───────────────────────────────────────────────┤
+│ total data received: 168B (approx)            │
+├───────────────────────────────────────────────┤
+│ average response time: 375ms                  │
+└───────────────────────────────────────────────┘
